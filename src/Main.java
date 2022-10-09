@@ -1,49 +1,43 @@
 public class Main {
     public static void main(String[] args) {
-            task1();
-            task2();
-            task3();
-            task4();
+        task1();
+        task2();
+        task3();
+    }
+
+    public static void task1() {
+        System.out.println("\nЗадание 1.\n");
+        /*
+        Напишите программу, которая выводит в консоль все високосные года, начиная с 1904 года до 2096.
+        В консоль результат должен выводиться в формате "… год является високосным".
+         */
+        for (int i = 1904; i <= 2096; i += 4) {
+            System.out.println(i + " год является високосным.");
         }
 
-        public static void task1() {
-            System.out.println("Задание 1.\n");
+    }
+
+    public static void task2() {
+        System.out.println("\nЗадание 2.\n");
         /*
-        С помощью цикла for выведите в консоль все числа от 1 до 10.
+        Напишите программу, которая выводит в консоль последовательность цифр:
+        7 14 21 28 35 42 49 56 63 70 77 84 91 98
          */
-            for (int i = 1; i <= 10; i++) {
-                System.out.println("Число " + i);
-            }
+        for (int i = 7; i <= 98; i += 7) {
+            System.out.print(i + " ");
         }
 
-        public static void task2() {
-            System.out.println("\nЗадание 2.\n");
+    }
+
+    public static void task3() {
+        System.out.println("\n\nЗадание 3.\n");
         /*
-        С помощью цикла for выведите в консоль все числа от 10 до 1.
+        Напишите программу, которая выводит в консоль последовательность цифр:
+        1 2 4 8 16 32 64 128 256 512
          */
-            for (int i = 10; i >= 1; i--) {
-                System.out.println("Число " + i);
-            }
+        for (int i = 1; i <= 512; i *=2) {
+            System.out.print(i + " ");
         }
 
-        public static void task3() {
-            System.out.println("\nЗадание 2.\n");
-        /*
-        Выведите в консоль все четные числа от 0 до 17.
-         */
-            for (int i = 0; i <= 17; i += 2) {
-                System.out.println("Чётное число " + i);
-            }
-        }
-
-        public static void task4() {
-            System.out.println("\nЗадание 2.\n");
-        /*
-        Выведите в консоль все числа от 10 до - 10 от бОльшего числа к меньшему.
-         */
-            for (int i = 10; i >= -10; i--) {
-                System.out.println("Число " + i);
-            }
-        }
+    }
 }
-
